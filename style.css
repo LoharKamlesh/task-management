@@ -11,7 +11,7 @@ html {
 body {
   padding: 10%;
   border: 2%;
-  height: 100vh;
+  height: 110vh;
   display: grid;
   align-items: top;
 }
