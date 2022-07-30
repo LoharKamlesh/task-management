@@ -25,14 +25,25 @@
       <!-- </form> -->
     <!-- <main class="app"> -->
       <div class="movements"> 
-        <!-- <div class="movements__row">
-        
-          <button class="form__btn">delete</button> 
-    
-        </div>  -->
+        <div class="movements__row"><img src="list.png" alt="list" class="list" />
+          
+          
+              <button class="form__btn"  id="btn"  
+              onmouseover="mouseHover(this.value)"
+              
+              onmouseout="mouseOut(this.value)"
+            
 
-      <!-- <div class="hide__tasks">Hide all Tasks
-       </div> -->
+              onclick="deleteTask('${el}')"><img src="trash-1.png" alt="trash" class="trash" />delete</button> 
+              
+              <!-- <button class="form__btn"    
+              onmouseover="mouseHover(this.value)" 
+              onmouseout="mouseOut(this.value)"
+            
+
+              onclick="deleteTask('${el}')"><img src="trash.png" alt="trash" class="trash" />delete</button>  -->
+      
+          </div> 
          
       </div>
       
@@ -56,3 +67,4 @@
   </body>
   
 </html>
+
