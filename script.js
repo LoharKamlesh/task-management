@@ -7,7 +7,7 @@ const delBtn = document.getElementById("btn");
 
 let movements = [
   "Clean the garden",
-  "vacuum clean the house",
+  "Vacuum clean the house",
   "Buy grocerries",
   "Sleep",
 ];
@@ -18,10 +18,11 @@ const displayMovements = function (movements) {
   //   console.log(movs);
 
   movs.forEach(function (el) {
+    el = el.toLowerCase();
     const htmlNew = `
     
         <div class="movements__row"><img src="list.png" alt="list" class="list" />
-        ${el}
+        ${el.charAt(0).toUpperCase() + el.slice(1)}
         
         <button class="form__btn" id="${el}"  onmouseover="mouseHover('${el}')" 
         onmouseout="mouseOut('${el}')"
@@ -75,7 +76,8 @@ const deleteTask = function (arg) {
 
 const searchTask = function (arg) {
   console.log(arg);
-  const args = arg.toLowerCase();
+  // const args = arg.toLowerCase();
+  const args = arg.charAt(0).toUpperCase() + arg.slice(1);
   let movementsNew = movements.filter(function (data) {
     return data.includes(args);
   });
@@ -100,3 +102,4 @@ const mouseOut = function (el) {
 
   // //console.log("I was hovered out");
 };
+
