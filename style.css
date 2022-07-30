@@ -70,10 +70,16 @@ h1 {
 }
 
 .movements {
+  margin-top: 3%;
+  margin-left: 5%;
+  padding: 1%;
+  border: thin solid rgb(163, 161, 161);
+  height: 100%;
+  width: 90%;
   grid-row: 2 / span 3;
   background-color: #fff;
-  border-radius: 1rem;
-  overflow: scroll;
+  /* border-radius: 1rem; */
+  /* overflow: scroll; */
 }
 
 .movements__row {
@@ -140,5 +146,7 @@ h1 {
 .list {
   height: 20px;
   margin: 10px;
+}
+
 }
 
