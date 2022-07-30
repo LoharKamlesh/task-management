@@ -18,7 +18,7 @@ const displayMovements = function (movements) {
   //   console.log(movs);
 
   movs.forEach(function (el) {
-    el = el.toLowerCase();
+    // el = el.toLowerCase();
     const htmlNew = `
     
         <div class="movements__row"><img src="list.png" alt="list" class="list" />
@@ -71,6 +71,7 @@ checkBox.addEventListener("change", function (e) {
 });
 
 const deleteTask = function (arg) {
+  console.log(arg);
   movements = movements.filter((data) => data !== arg);
 
   displayMovements(movements);
