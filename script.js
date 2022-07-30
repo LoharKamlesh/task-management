@@ -50,7 +50,9 @@ const displayMovements = function (movements) {
 
 const addTask = function () {
   const taskInput = document.querySelector("#addTask");
-  const taskInputVal = taskInput.value;
+  let taskInputVal = taskInput.value;
+  taskInputVal = taskInputVal.charAt(0).toUpperCase() + taskInputVal.slice(1);
+  console.log(taskInputVal);
   movements.push(taskInputVal);
   taskInput.value = "";
 
@@ -102,4 +104,3 @@ const mouseOut = function (el) {
 
   // //console.log("I was hovered out");
 };
-
